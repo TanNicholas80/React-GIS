@@ -1,0 +1,24 @@
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+}
+.background-map {
+    background: #008BE4;
+    border-radius: 30px;
+}
+.kategori-menu {
+    width: 250px;
+    height: 90px;
+    border-radius: 13px;
+    background: #F9F9F9;
+    cursor: pointer;
+}
+.content-menu {
+    font-size: 24px;
+    font-weight: 400;
+}
+.menu-active {
+    background: #16C0FF;
+    color: #FFFFFF;
+}

@@ -1,0 +1,39 @@
+.title-nav {
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(162deg, #0174BE 26.75%, #4CB9FF 88.35%);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+}
+.sub-nav {
+    color: #00A9E8;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bg-nav {
+    background: #F6F8FF;
+    box-shadow: 0px 2px 12.4px 0px rgba(0, 0, 0, 0.15);
+}
+.nav-text {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+.active {
+    position: relative;
+    font-weight: 700;
+}
+.active::after {
+    content: " ";
+    position: absolute;
+    bottom: -18px;
+    left: 50%; /* Anda dapat menyesuaikan dengan kebutuhan */
+    transform: translateX(-50%);
+    width: 75px; /* Lebar dari pseudo-element */
+    height: 5px; /* Tinggi dari pseudo-element */
+    background-color: #2DADFF; /* Warna sesuai keinginan Anda */
+    border-radius: 14px;
+    display: block;
+}

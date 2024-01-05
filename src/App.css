@@ -1,0 +1,133 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.aboutLay {
+    background-color: #008BE4;
+    width: 100%;
+    display: flex;
+}
+
+.aboutLay img {
+    width: 484px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 10;
+}
+
+.aboutInfo h4 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.aboutInfo p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 167%;
+    color: #FFFFFF;
+
+
+}
+
+.PLNDetail {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -4px 0px 4.3px rgba(0, 0, 0, 0.25);
+
+}
+
+.PLNDetail h4 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #008BE4;
+
+
+}
+
+.PLNDetail hr {
+    margin: auto;
+    width: 312px;
+    height: 0px;
+    left: calc(50% - 312px/2 + 6.5px);
+    top: 88px;
+    border: 3px solid #2DADFF;
+
+}
+
+.PLNDetail p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    color: #000000;
+
+
+}
+
+.chartPLN {
+    width: 500px;
+}
+
+.chartInfo {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cardPLN {
+    width: 250px;
+    height: 150px;
+    background: #2DADFF;
+    border-radius: 11px;
+
+}
+
+.cardPLN p {
+    /* Rumah Terdampak Pemadaman Bulan ini */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-left: 10px;
+
+}
+
+.cardPLN span {
+    /* 54 */
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    color: #FFFFFF;
+    margin-top: -20px;
+    margin-left: 10px;
+
+
+}
+
+.cardPLN img {
+    width: 60px;
+    height: 60px;
+    margin-left: 65px;
+}
+
+.cardPLN ul {
+    margin-top: -20px;
+    margin-left: -10px;
+
+}
+
+.cardPLN ul li {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.kotak {
+    /* Rectangle 45 */
+
+    width: 49px;
+    height: 49px;
+    background: #ECC600;
+
+}
