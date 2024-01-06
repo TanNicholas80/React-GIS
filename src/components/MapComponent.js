@@ -1,5 +1,5 @@
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON, useMapEvents, Circle, CircleMarker} from 'react-leaflet';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import Frame from './mapFramer';
 import customIconMark from '../images/markPemadaman.png';
@@ -19,6 +19,14 @@ const MapComponent = ({ selectedMenu }) => {
     });
     const handleMarkerPopupClick = (data) => {
         setSelectedData(data);
+    };
+
+    const mapRef = useRef(null);
+
+    const handleMarkerClick = (coordinates) => {
+      // Gantilah kode berikut dengan logika zoom sesuai kebutuhan Anda
+      const newZoomLevel = 12; // Contoh: zoom ke level 15
+      mapRef.current.flyTo(coordinates, newZoomLevel, { duration: 1 });
     };
     
     if (!jawaTengahGeoJSON || !jawaTengahGeoJSON.features) {
@@ -52,7 +60,7 @@ const MapComponent = ({ selectedMenu }) => {
 
     return (
         <div className="map">
-      <MapContainer center={[-7.150975, 110.1402594]} scrollWheelZoom={false} zoom={ZoomValue} className='position-relative' >
+      <MapContainer center={[-7.150975, 110.1402594]} scrollWheelZoom={false} zoom={ZoomValue} ref={mapRef} className='position-relative' >
         <ZoomLevelComponent setZoomValue={setZoomValue}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <GeoJSON data={jawaTengahGeoJSON} style={{ fillColor: 'green', weight: 2, color: 'black' }}>
@@ -78,6 +86,7 @@ const MapComponent = ({ selectedMenu }) => {
             ]} icon={customIcon}
               eventHandlers={{
                 click: () => {
+                  handleMarkerClick(feature.geometry.coordinates2)
                   handleMarkerPopupClick(feature.info)
                 },
               }}

@@ -9,7 +9,8 @@ export const markerPemadaman = {
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [109.900177, -7.363209]
+          "coordinates": [109.900177, -7.363209],
+          "coordinates2": [-7.363209, 109.900177]
         },
         "info": {
           "kota_kab": "Kabupaten Wonosobo",
@@ -30,7 +31,8 @@ export const markerPemadaman = {
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [110.416664, -6.966667]
+          "coordinates": [110.416664, -6.966667],
+          "coordinates2": [-6.966667, 110.416664]
         },
         "info": {
           "kota_kab": "Kota Semarang",
@@ -51,7 +53,8 @@ export const markerPemadaman = {
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [110.907722, -7.028490]
+          "coordinates": [110.907722, -7.028490],
+          "coordinates2": [-7.028490, 110.907722]
         },
         "info": {
           "kota_kab": "Kabupaten Grobogan",
